@@ -63,16 +63,9 @@ def run():
             cv2.rectangle(img,(x,y),(x+w,y+h),(0,255,0), 3)
         cv2.putText(img, str(main_emer), (200, 200), cv2.FONT_HERSHEY_SIMPLEX, 3, (255, 0, 0), 2)     
            
-                
-
-            
-
         cv2.imshow("key", img)
         if cv2.waitKey(1) == ord("q"):
             break
-
-
-
 
 if __name__ == '__main__':
     os.environ["OPENCV_FFMPEG_CAPTURE_OPTIONS"] = "rtsp_transport;udp"
